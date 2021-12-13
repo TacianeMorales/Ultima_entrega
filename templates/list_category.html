@@ -1,0 +1,28 @@
+{%extends '_base.html' %}
+
+{% block title %}
+ Categoria
+{%endblock title %}
+{% block content %}
+<h4>Categorias
+    <a href="{% url 'create_category' %}">Incluir</a>
+</h4>
+<ul>
+    {% for category in categories %}
+        <li>
+            {{ category.name }}
+            &nbsp;|&nbsp;
+            <a href="{% url 'categroy_detail' category.id %}">ver</a>
+
+            &nbsp;|&nbsp;
+            <a href="{% url 'categroy_update' category.id %}">editar</a>
+
+            &nbsp;|&nbsp;
+            <a href="{% url 'categroy_delete' category.id %}">excluir</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+
+{% block footer %}
+{% endblock %}

@@ -1,0 +1,12 @@
+<h4>Infomações</h4>
+<ul>
+    {% for Infos in informacoes %}
+    <ol>{{ Infos.Produtname}}</ol>
+    <li>{{ Infos.ProdutPeso}}</li>
+    <li>{{ Infos.ProdutMarca}}</li>
+    <li>{{ Infos.ProdutUso}}</li>
+    <br>
+    {% endfor %}
+</ul>
+<a href="https://vinitrecente.pythonanywhere.com/"><button type="button" class="btn btn-info"><i class="fa fa-home"></i> Home</button></a>
+<a href="https://vinitrecente.pythonanywhere.com/category/add"><button type="button" class="btn btn-success"><i class="fa fa-plus"></i> Adicionar Produto</button></a>

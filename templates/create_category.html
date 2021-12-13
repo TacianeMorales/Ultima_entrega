@@ -1,0 +1,7 @@
+<h4>Criar Categoria</h4>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <a href="https://vinitrecente.pythonanywhere.com/"><button type="submit">Salvar</button></a>
+    <a href="https://vinitrecente.pythonanywhere.com/"><button type="button" class="btn btn-info"><i class="fa fa-home"></i> Home</button></a>
+</form>
